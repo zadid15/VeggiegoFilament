@@ -20,6 +20,7 @@ return new class extends Migration
             $table->enum('unit', ['kg', 'gram', 'ikat', 'pcs']);
             $table->text('description');
             $table->string('image');
+            $table->string('slug');
             $table->timestamps();
         });
     }
